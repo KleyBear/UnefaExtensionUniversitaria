@@ -1,0 +1,226 @@
+{
+  "users": [
+    {
+      "id": 2,
+      "name": "Docente Juan",
+      "email": "juan@platform.com",
+      "password": "teacher123",
+      "username": "juan_teacher",
+      "phone": "+58-412-7654321",
+      "role": "teacher",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Juan",
+      "createdAt": "2024-01-02"
+    },
+    {
+      "id": 3,
+      "name": "Estudiante María",
+      "email": "maria@platform.com",
+      "password": "student123",
+      "username": "maria_student",
+      "phone": "+58-412-9876543",
+      "role": "participant",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Maria",
+      "createdAt": "2024-01-03"
+    },
+    {
+      "name": "Camila Rincon",
+      "username": "Camila",
+      "email": "camila@gmail.com",
+      "password": "cami1234",
+      "role": "teacher",
+      "avatar": "",
+      "createdAt": "2025-12-26",
+      "id": 4
+    },
+    {
+      "name": "Kleyberth Bustamante",
+      "username": "Kleyberth",
+      "email": "kleiberthelian@gmail.com",
+      "password": "Kebt190304",
+      "role": "participant",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Kleyberth",
+      "phone": "",
+      "createdAt": "2025-12-28",
+      "id": 5
+    },
+    {
+      "name": "María García",
+      "username": "mari",
+      "email": "maria@gmail.com",
+      "password": "Mari1234",
+      "role": "participant",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=mari",
+      "phone": "",
+      "createdAt": "2025-12-28",
+      "id": 6
+    },
+    {
+      "name": "juan perez",
+      "username": "juanperez",
+      "email": "juan12@platform.com",
+      "password": "Juan1234",
+      "role": "participant",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=juanperez",
+      "phone": "",
+      "createdAt": "2025-12-29",
+      "id": 7
+    },
+    {
+      "name": "admin",
+      "username": "admin",
+      "email": "admin@platform.com",
+      "password": "admin123",
+      "role": "admin",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=admin",
+      "createdAt": "2026-01-13",
+      "id": 8
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "title": "Introducción a React",
+      "description": "Aprende los fundamentos de React",
+      "teacherId": 2,
+      "category": "Programación",
+      "image": "",
+      "duration": "4 semanas",
+      "students": 2,
+      "status": "active",
+      "createdAt": "2024-01-05",
+      "modules": 5,
+      "videoUrl": "https://www.youtube.com/watch?v=yIr_1CasXkM&pp=ygUTcHJvZ3JhbWFjacOzbiByZWFjdA%3D%3D",
+      "resources": [
+        {
+          "id": 1,
+          "name": "Guía de React",
+          "type": "pdf",
+          "url": "https://example.com/guide.pdf"
+        },
+        {
+          "id": 2,
+          "name": "Ejemplos de Código",
+          "type": "zip",
+          "url": "https://example.com/examples.zip"
+        }
+      ]
+    },
+    {
+      "title": "Cocina",
+      "description": "",
+      "teacherId": 2,
+      "category": "Cocina",
+      "duration": "4 semanas",
+      "image": "",
+      "id": 3,
+      "videoUrl": "https://www.youtube.com/watch?v=wm9ym-TAQ_k",
+      "students": 1
+    },
+    {
+      "title": "Ropa",
+      "description": "Curso Introductorio ",
+      "category": "Ropa",
+      "duration": "4 semanas",
+      "image": "",
+      "teacherId": 4,
+      "students": 1,
+      "status": "active",
+      "createdAt": "2025-12-27",
+      "modules": 1,
+      "id": 4,
+      "videoUrl": "https://www.youtube.com/watch?v=HqzmLO4Pi7A&pp=ygUQdmlkZW8gNSBzZWd1bmRvcw%3D%3D",
+      "resources": [
+        {
+          "id": 1766936261790,
+          "name": "guia 1 (1) (1) (1)",
+          "url": "blob:http://localhost:3000/8c93d783-4d20-49db-b512-23da4cb63dd5",
+          "type": "pdf"
+        }
+      ]
+    }
+  ],
+  "enrollments": [
+    {
+      "id": 1,
+      "userId": 3,
+      "courseId": 1,
+      "status": "enrolled",
+      "progress": 85,
+      "enrolledAt": "2024-01-10",
+      "videoWatched": true,
+      "filesAccessedCount": 1
+    },
+    {
+      "userId": 5,
+      "courseId": 4,
+      "status": "enrolled",
+      "progress": 60,
+      "enrolledAt": "2025-12-28",
+      "videoWatched": true,
+      "filesAccessedCount": 1,
+      "id": 2
+    },
+    {
+      "userId": 6,
+      "courseId": 1,
+      "status": "enrolled",
+      "progress": 0,
+      "enrolledAt": "2025-12-28",
+      "videoWatched": false,
+      "filesAccessedCount": 0,
+      "id": 3
+    },
+    {
+      "userId": 6,
+      "courseId": 3,
+      "status": "enrolled",
+      "progress": 0,
+      "enrolledAt": "2025-12-28",
+      "videoWatched": false,
+      "filesAccessedCount": 0,
+      "id": 4
+    },
+    {
+      "userId": 6,
+      "courseId": 4,
+      "status": "enrolled",
+      "progress": 0,
+      "enrolledAt": "2025-12-28",
+      "videoWatched": false,
+      "filesAccessedCount": 0,
+      "id": 5
+    }
+  ],
+  "activities": [
+    {
+      "id": 1,
+      "courseId": 1,
+      "title": "Ejercicio 1: Componentes básicos",
+      "description": "Crea un componente funcional simple",
+      "dueDate": "2024-02-15",
+      "submissions": []
+    },
+    {
+      "title": "tarea 1",
+      "description": "nose ",
+      "dueDate": "2026-02-12",
+      "attachmentUrl": "",
+      "attachmentName": "",
+      "courseId": 4,
+      "submissions": [],
+      "id": 2
+    }
+  ],
+  "submissions": [
+    {
+      "id": 1,
+      "activityId": 1,
+      "userId": 3,
+      "courseId": 1,
+      "fileUrl": "submission.pdf",
+      "submittedAt": "2024-02-14",
+      "grade": 90,
+      "feedback": "Buen trabajo"
+    }
+  ]
+}
