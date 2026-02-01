@@ -5,19 +5,25 @@ import { useAuthStore } from "@/lib/auth-store"
 export function Header() {
   const user = useAuthStore((state) => state.user)
 
+  const roleNames: Record<string, string> = {
+    admin: "Administrador",
+    teacher: "Docente",
+    participant: "Participante",
+  }
+
   return (
     <header className="bg-white border-b border-slate-200 p-4">
       <div className="flex items-center justify-between">
-        {/* Reemplazado el h1 por la imagen del escudo */}
         <div className="flex items-center">
           <img 
             src="/Escudo_unefa.png" 
             alt="Escudo UNEFA" 
-            className="h-12 w-auto object-contain" 
+            className="h-12 w-12 object-contain" 
           />
         </div>
 
-        <div className="flex items-center gap-3">
+        {/* pr-1 para móviles y md:pr-10 para computadoras */}
+        <div className="flex items-center gap-3 pr-1 md:pr-4">
           <img 
             src={user?.avatar || "/placeholder.svg"} 
             alt={user?.name} 
@@ -25,7 +31,9 @@ export function Header() {
           />
           <div>
             <p className="text-sm font-medium text-slate-900">{user?.name}</p>
-            <p className="text-xs text-slate-500 capitalize">{user?.role}</p>
+            <p className="text-xs text-slate-500 font-medium">
+              {user?.role ? roleNames[user.role] || user.role : "Usuario"}
+            </p>
           </div>
         </div>
       </div>
